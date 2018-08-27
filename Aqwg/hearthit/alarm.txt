@@ -1,0 +1,39 @@
+# 请按照下列方式添加需要告警的清单
+# 以“#”开头的行将被忽略
+# 空行将被忽略
+# begin和end之间的内容顺序可以随意
+
+begin
+
+interface_name@数据验真
+
+token_url@https://218.205.68.67:8002/dataex/api/auth?userId=hujingyue&pwd=shhenpzZU5w
+
+token_wait_time@10
+
+data_url@https://218.205.68.67:8000/dataex/api/data_pr/tele_fac?token=nfnzg0ro&appKey=acfbc245c56390731b81c583d585b640&auth_code=1&bill_no=13575750022
+
+data_wait_time@10
+
+bill_no@13516821970,13777372873
+# 告警接收人号码：覃事银，黄巍
+
+end
+
+
+begin
+
+interface_name@数据验真2
+
+token_url@https://218.205.68.67:8000/dataex/api/auth?userId=hujingyue&pwd=shhenpzZU5w
+
+token_wait_time@10
+
+data_url@https://218.205.68.67:8002/dataex/api/data_pr/tele_fac?token=nfnzg0ro&appKey=acfbc245c56390731b81c583d585b640&auth_code=1&bill_no=13575750022
+
+data_wait_time@10
+
+bill_no@13516821970,13777372873
+# 告警接收人号码：覃事银，黄巍
+
+end
